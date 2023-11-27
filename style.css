@@ -20,3 +20,8 @@ body {
 .sidebar {
 	grid-row: 1 / -1;
 }
+
+header {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
