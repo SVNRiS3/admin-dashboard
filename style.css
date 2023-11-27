@@ -136,7 +136,7 @@ header #search {
 
 main {
 	display: grid;
-	grid-template: 2fr 1fr / 1fr 1fr;
+	grid-template: 1fr 1fr / 2fr 1fr;
 }
 
 .projects {
@@ -144,13 +144,33 @@ main {
 	display: grid;
 	grid-template: min-content 1fr / repeat(
 			auto-fit,
-			minmax(100px, 1fr)
+			minmax(200px, 1fr)
 		);
 	gap: 16px;
+	padding: 16px;
 }
 
 .projects > .section-title {
 	grid-column: 1 / -1;
+}
+
+.project-card {
+	position: relative;
+	border-radius: 6px;
+	background-color: var(--main-color);
+	padding: 20px 10px 10px 25px;
+	height: 140px;
+}
+
+.project-card::before {
+	position: absolute;
+	content: "";
+	background-color: orange;
+	height: 140px;
+	width: 5px;
+	left: 0;
+	top: 0px;
+	border-radius: 6px 0 0 6px;
 }
 
 footer {
