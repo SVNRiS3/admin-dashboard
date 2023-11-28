@@ -165,14 +165,14 @@ main {
 	border-radius: 6px;
 	background-color: var(--main-color);
 	padding: 20px 10px 10px 25px;
-	height: 140px;
+	/* height: 140px; */
 }
 
 .project-card::before {
 	position: absolute;
 	content: "";
 	background-color: orange;
-	height: 140px;
+	height: 100%;
 	width: 5px;
 	left: 0;
 	top: 0px;
@@ -201,16 +201,26 @@ main {
 	padding: 16px 16px 0 0;
 }
 
+.trending {
+	display: flex;
+	flex-direction: column;
+}
+
 .announcement {
 	padding: 5px 0;
 }
 
-.announcement-title {
+.small-title {
 	font-weight: bold;
 	font-size: 1.4rem;
 }
 
-.announcement > .card-text {
+.small-text {
+	color: rgb(100, 100, 100);
+	font-size: 1.2rem;
+}
+
+.details > .small-title {
 	font-size: 1.2rem;
 }
 
@@ -225,6 +235,8 @@ main {
 	background-color: var(--main-color);
 	border-radius: 6px;
 	padding: 20px;
+	margin-bottom: 16px;
+	flex: 1;
 }
 
 footer {
