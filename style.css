@@ -201,6 +201,23 @@ main {
 	padding: 16px 16px 0 0;
 }
 
+.announcement {
+	padding: 5px 0;
+}
+
+.announcement-title {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.announcement > .card-text {
+	font-size: 1.2rem;
+}
+
+.announcement:not(:last-child) {
+	border-bottom: 1px solid var(--bg-color);
+}
+
 .announcement-items,
 .trending-users {
 	display: flex;
