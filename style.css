@@ -136,18 +136,24 @@ header #search {
 
 main {
 	display: grid;
-	grid-template: 1fr 1fr / 2fr 1fr;
+	grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.section-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 .projects {
 	grid-row: 1 / 3;
-	display: grid;
-	grid-template: min-content 1fr / repeat(
-			auto-fit,
-			minmax(200px, 1fr)
-		);
-	gap: 16px;
 	padding: 16px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 16px;
 }
 
 .projects > .section-title {
@@ -171,6 +177,37 @@ main {
 	left: 0;
 	top: 0px;
 	border-radius: 6px 0 0 6px;
+}
+
+.card-title {
+	font-weight: bold;
+}
+
+.card-text {
+	font-size: 1.4rem;
+	color: rgb(100, 100, 100);
+}
+
+.card-actions {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 10px;
+	gap: 10px;
+}
+
+.announcements,
+.trending {
+	padding: 16px 16px 0 0;
+}
+
+.announcement-items,
+.trending-users {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--main-color);
+	border-radius: 6px;
+	padding: 20px;
 }
 
 footer {
